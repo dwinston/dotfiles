@@ -1,0 +1,32 @@
+process.env.ROOT_URL = "https://pushpickup.com"
+process.env.MAIL_URL = 
+  "smtp://support%40pushpickup.com:lyzttsoozzbdqdmg@smtp.gmail.com:587";
+
+var contactEmail = function (user) {
+  return user && user.profile && user.profile.email;
+};
+
+Meteor.methods({
+  sendEmail: function (o) {
+    check(o, {bcc: [String], subject: String, text: String});
+    var bcc = o.bcc && _.filter(_.map(o.bcc, function (id) { 
+      return contactEmail(Meteor.users.findOne(id));
+    }), function (email) { 
+      return typeof(email) === 'string'; 
+    });
+    var from = "support@pushpickup.com";
+    var subject = o.subject;
+    var text = o.text;
+    
+    // Let other method calls from the same client start running,
+    // without waiting for the email sending to complete.
+    this.unblock();
+    
+    Email.send({
+      bcc: bcc,
+      from: from,
+      subject: subject,
+      text: text
+    });
+  }
+});

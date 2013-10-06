@@ -1,0 +1,32 @@
+* DONE limit publication to say 200 locations
+* DONE scap MarkerClusterer
+* DONE do not auto-detect location
+** DONE have 'detect current location' link by map
+** DONE save current map bounds to profile of signed-in user
+* DONE have two columns
+** DONE listing spans left column
+** DONE map spans right column and lies below listing for small screens
+* DONE can list all proposals within map bounds
+** DONE link to map from location name scrolls to map
+** DONE bounce corresponding map marker
+* no following. only one action. change to "in | not in".
+* list your proposals 
+** is default 
+** toggles btwn location's and bounds's proposals
+* organizer can declare game on anytime
+* organizer can email those in game
+* can add nickname to display to others
+* can discuss a proposal (disqus?)
+* add (google?) analytics
+* add spiderable package
+* add appcache package
+* add square/cubism for visualizing proposal activity over the week
+* better mobile experience
+** full-screen map
+** fixed navbar with icons
+*** Puch Pickup text logo
+*** help (?)
+*** sign in / out
+* yield RSS field
+* use layers of abstraction to extract API that pickupultimate.com could use
+* overlap map with heat map of activity

@@ -1,0 +1,2 @@
+hoursPerWeek = 168
+num30minSlots = hoursPerWeek * 2

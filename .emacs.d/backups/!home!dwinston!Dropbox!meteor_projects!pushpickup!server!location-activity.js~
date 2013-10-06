@@ -1,0 +1,14 @@
+Meteor.methods({
+  locStatus: function (locId) {
+    var status = {active: false, gaming: false};
+    var currProposalsAtLoc = Proposals.find({
+      locId: locId,
+      time: {$gt: Date.now() - 3600000}
+    }).fetch();
+    activity.active = currProposalsAtLoc.length > 0;
+    activity.numGaming = _.any(currProposalsAtLoc, function (p) {
+      // Has 'attending' property only if game is on
+      return p.attending;
+    });
+  }
+});

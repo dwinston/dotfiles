@@ -1,0 +1,10 @@
+def fact(n)
+  return 0 if n < 2
+  return n * fact(n-1)
+end
+
+class FixNum
+  def choose(k)
+    return fact(self) / (fact(k) * fact(self - k))
+  end
+end

@@ -1,0 +1,85 @@
+Template.proposal.helpers({
+  startsAt: function () {
+    return prettyTime(this.time);
+  },
+  locName: function () {
+    return Locations.findOne(this.locId).name;
+  },
+  gameOn: function () {
+    return !!this.attending;
+  },
+  isAttending: function () {
+    return _.contains(this.attending, Meteor.userId());
+  },
+  numAttending: function () {
+    return this.attending.length;
+  }
+});
+
+var quorumIsPlausible = function (p) {
+  // Evaluated just prior to a single push or follow
+  return _.union(p.pushing, p.following, [Meteor.userId()]).length 
+    >= QUORUM;
+};
+
+Template.proposal.events({
+  "click .push": function () {
+    if (this.pushing.length + 1 >= QUORUM) {
+      Proposals.update(this._id, {
+        $push: {pushing: Meteor.userId()},
+        $set: {attending: (this.pushing).concat(Meteor.userId())}
+      });
+      Meteor.call('sendEmail', {
+        bcc: _.union(this.following, this.pushing),
+        subject: "["+APPNAME+"] Game On for " + 
+          prettyTime(this.time) + " at " + 
+          Locations.findOne({_id: this.locId}).name + "!",
+        text: "Thanks for organizing your game with "+APPNAME+". " +
+          "Enjoy!\n\n" + Meteor.absoluteUrl()
+      });
+    } else {
+      if (!this.hasBeenPlausible && quorumIsPlausible(this)) {
+        console.log('email those following');
+        Proposals.update(this._id, {
+          $push: {pushing: Meteor.userId()},
+          $set: {hasBeenPlausible: true}
+        });
+      } else {
+        Proposals.update(this._id, {
+          $push: {pushing: Meteor.userId()}
+        });
+      }
+    }
+  },
+  "click .unpush": function () {
+    if (this.pushing.length - 1 == 0 && 
+        this.following.length == 0) {
+      Proposals.remove(this._id);
+    } else {
+      Proposals.update(this._id, {
+        $pull: {pushing: Meteor.userId()}
+      });
+    }
+  },
+
+  "click .attend": function () {
+    Proposals.update(this._id, {
+      $push: {attending: Meteor.userId()}
+    });
+  },
+  "click .unattend": function () {
+    Proposals.update(this._id, {
+      $pull: {attending: Meteor.userId()}
+    });
+  },
+  "click .bounceMarker": function () {
+    var marker = getMarker(this.locId);
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+    Meteor.setTimeout(function () {
+      marker.setAnimation(null);
+    }, 2000);
+    $(document.body).animate({
+      'scrollTop': $('#map').offset().top
+    }, 400);
+  }
+});

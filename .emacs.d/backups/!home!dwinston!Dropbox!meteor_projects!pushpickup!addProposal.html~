@@ -1,0 +1,19 @@
+<template name="addProposal">
+  <h3 id="addProposalHeader">Add proposal</h3>
+  <div id="newProposal">
+    <select id="newProposalDay">
+      {{#each dayOptions}}
+        <option value="{{timeAtMidnight}}">{{weekdayName}}</option>
+      {{/each}}
+    </select>
+    <select id="newProposalTime">
+      {{#each timeOptions}}
+        <option {{selected}} value="{{msecFromMidnight}}">
+          {{ampmTime}}
+        </option>
+      {{/each}}
+    </select>
+    <input type="button" id="newProposalPost"
+           class="btn btn-primary" value="Post" />
+  </div>
+</template>

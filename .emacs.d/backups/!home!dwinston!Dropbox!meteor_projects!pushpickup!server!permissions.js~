@@ -1,0 +1,142 @@
+Meteor.startup(function () {
+
+  var su = {id: "HQEsthyn2hJ7janhL"};
+
+  var boundsForm = Match.Where(function (x) {
+    check(x, [[Number]]);
+    return x.length == 2 && x[0].length == 2 && x[1].length == 2;
+  });
+
+  Meteor.users.deny({
+    update: function (userId, doc, fieldNames, modifier) { 
+      if (_.isEqual(doc._id, userId) && Match.test(modifier, {
+        $set: {'profile.lngLatBounds': boundsForm}
+      })) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+  });
+
+  Locations.allow({
+    insert: function (userId, doc) {
+      return userId 
+        && (doc.name.length > 0)
+        && (doc.lngLat[0] >= -180)
+        && (doc.lngLat[0] <= 180)
+        && (doc.lngLat[1] >= -90)
+        && (doc.lngLat[1] <= 90);
+    },
+    update: function (userId, doc, fieldNames, modifier) {
+      // superuser
+      if (userId == su.id) { return true; }
+      return false;
+    },
+    remove: function (userId, doc) {
+      // superuser
+      if (userId == su.id) { return true; }
+      return false;
+    }
+  });
+
+  var quorumIsPlausible = function (p, userId) {
+    // Evaluated just prior to a single push or follow
+    return _.union(p.pushing, p.following, [userId]).length 
+      >= QUORUM;
+  };
+
+  Proposals.allow({
+    insert: function (userId, doc) {
+      return userId
+        && (doc.time > Date.now() - 3600000)
+        && Locations.findOne(doc.locId)
+        && _.isEqual(doc.attending, [userId])
+        && Match.test(doc, {
+          _id: String, 
+          time: Number, 
+          locId: String,
+          attending: [String],
+          quorum: Number
+        }); 
+    },
+    update: function (userId, doc, fieldNames, modifier) {
+      // follow
+      if (!doc.hasBeenPlausible && quorumIsPlausible(doc, userId)) {
+        if (_.isEqual(modifier, {$push: {following: userId},
+                                 $set: {hasBeenPlausible: true}})) {
+          return true;
+        }
+      } else if (_.isEqual(modifier, {
+        $push: {following: userId}})) {
+        return true;
+      }
+      // unfollow
+      if (_.isEqual(modifier, {$pull: {following: userId}})
+          && (doc.following.length > 1 || doc.pushing.length > 0)) {
+        return true;
+      }
+      // push
+      if (doc.pushing.length + 1 >= QUORUM) {
+        if (_.isEqual(modifier, {
+          $push: {pushing: userId},
+          $set: {attending: (doc.pushing).concat(userId)}
+        })) {
+          return true;
+        }
+      } else {
+        if (!doc.hasBeenPlausible 
+            && quorumIsPlausible(doc, userId)) {
+          if (_.isEqual(modifier, {
+            $push: {pushing: userId},
+            $set: {hasBeenPlausible: true}
+          })) {
+            return true;
+          }
+        } else if (_.isEqual(modifier, {
+          $push: {pushing: userId}
+        })) {
+          return true;
+        }
+      }
+      // unpush
+      if (_.isEqual(modifier, {
+        $pull: {pushing: userId}
+      }) && (doc.following.length > 0 || doc.pushing.length > 1)) {
+        return true;
+      }
+      // attend
+      if (_.isEqual(modifier, {
+        $push: {attending: userId}
+      })) {
+        return true;
+      }
+      // unattend
+      if (_.isEqual(modifier, {
+        $pull: {attending: userId}
+      })) {
+        return true;
+      }
+      // superuser
+      if (userId == su.id) { return true; }
+      return false;
+    },
+    remove: function (userId, doc) {
+      // unfollow
+      if (doc.following.length == 1 
+          && doc.pushing.length == 0
+          && _.isEqual(doc.following, [userId])) {
+        return true;
+      }
+      // unpush
+      if (doc.following.length == 0 
+          && doc.pushing.length == 1
+          && _.isEqual(doc.pushing, [userId])) {
+        return true;
+      }
+      // superuser
+      if (userId == su.id) { return true; }
+      return false;
+    }
+  });
+});

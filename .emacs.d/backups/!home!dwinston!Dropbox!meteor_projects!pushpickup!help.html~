@@ -1,0 +1,33 @@
+<template name="help">
+  <div class="fromFooterContent">
+    <h1>Help</h1>
+    <h2>Pushing? Following?</h2>
+    <p>
+      If you <em>push</em> a proposal and enough other people do too
+      (currently, quorum is {{quorum}} people), then the game is on,
+      and you get an email. If you <em>follow</em> a proposal, then
+      you get an email if enough other people are either following or
+      pushing ("enough" because the game would be on if you all
+      pushed).
+    </p>
+    <p>
+      Once a game is on, anyone can mark that they are attending (if
+      you were pushing, you are automatically marked as attending, but
+      you can change that).
+    </p>
+    <h2>What about ...?</h2>
+    <p>
+      Push Pickup is just getting started, so it's hard to predict
+      what a new user will have trouble doing.  If you need help,
+      email me at
+      <a href="mailto:donny@pushpickup.com">donny@pushpickup.com</a>.
+    <p>
+      Together, we can build a great "Help" section with answers to
+      frequently asked questions, or, better yet, improve the site to
+      keep this section small. :) Thanks for your patience.
+    </p>
+    <p>
+      Donny
+    </p>
+  </div>
+</template>

@@ -1,0 +1,98 @@
+% LaTeX resume using res.cls
+% based on res9b.tex
+\documentclass[line]{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\begin{document}
+
+\name{Donald (Donny) Winston}
+% \address used twice to have two lines of address
+\address{1822 Woolsey St, Berkeley, CA 94703}
+\address{dwinston@alum.mit.edu, (617) 301-2103}
+
+ 
+\begin{resume}
+ 
+\section{OBJECTIVE}       
+Master the art of computer programming in service of amplifying human potential and sweeping away drudgery and danger. Work with excellent people. Mentor and be mentored.
+\vspace{-6pt}
+
+\section{EDUCATION} 
+% \sl will be bold italic in New Century Schoolbook (or
+	        % any postscript font) and just slanted in
+		% Computer Modern (default) font
+{\sl Massachusetts Institute of Technology}, 
+Cambridge, MA \hfill Fall 2006 - Spring 2012  \\
+M.S. and Ph.D., Electrical Engineering and Computer Science. GPA 5.0/5.0. \\
+National Science Foundation Graduate Research Fellowship (2007-2010) \\
+{\sl University of California},
+Berkeley, CA \hfill Fall 2002 - Spring 2006 \\
+B.S., Electrical Engineering and Computer Sciences. High Honors.
+\vspace{-6pt}
+
+\section{RESEARCH EXPERIENCE}
+Hewlett-Packard Labs, Palo Alto, CA \hfill Jan 2012 - Oct 2012
+ \begin{itemize} \itemsep -2pt % reduce space between items
+\item Developed processes for nanofabrication of memristive systems for non-volatile memory
+\item Provided expertise in fabrication and imaging to team members and visiting researchers
+\end{itemize} 
+\vspace{-12pt} 
+MIT, Cambridge, MA \hfill Fall 2006 - Jan 2012
+\begin{itemize}  \itemsep -2pt %reduce space between items
+\item Investigated novel optical lithography schemes, templated self-assembly of block copolymers using electron-beam lithography, and light-ion-beam lithography.
+\item M.S. Thesis: ``Nodal Photolithography: Lithography via Far-Field Optical Nodes in the Resist", http://hdl.handle.net/1721.1/43065
+\item Ph.D. Thesis: ``Sub-10-nm lithography with light-ion beams", http://hdl.handle.net/1721.1/71495
+\end{itemize}
+\vspace{-12pt}                 
+NIST, Gaithersburg, MD \hfill Fall 2008 - Fall 2011
+\begin{itemize} \itemsep -2pt
+\item Investigated nanoscale imaging and patterning with a helium-ion beam.
+\end{itemize} 
+\vspace{-12pt}
+IBM Research, Yorktown Heights, NY \hfill Summer 2007
+\begin{itemize} \itemsep -2pt
+\item Conducted experiments and developed reflectometry software to identify self-segregating thin film systems.
+\end{itemize} 
+\vspace{-6pt}
+
+\section{FAMILIAR TECHNOLOGY/COURSEWORK}
+{\sl Technology:} Scheme/CL, Java, C, Python, MATLAB, Ruby, Scala, Javascript, HTML, CSS, MS Office, LaTeX, Windows, Linux \\
+{\sl Coursework:} functional programming, software as a service, machine learning, instrumentation and measurement, nanoscale fabrication and microscopy, applied quantum and statistical physics, efficient algorithms and intractable problems, technical communication; probability and random processes; electronic transducers, integrated circuit devices, signals and Systems, data and machine structures. 
+\vspace{-6pt}
+
+\section{SERVICE}
+MIT Residential Life Programs
+\begin{itemize}
+Resident tutor (non-academic "big brother") for ~30 undergraduates (2008-2010).
+\end{itemize}
+Tang Hall Residents’ Association
+\begin{itemize}
+Event coordinator for 400+ graduate students (2007-2008). Team of 15.
+\end{itemize}
+6.Insight (department seminar series)
+\begin{itemize}
+Committee member (Spring 2007), co-chair (Spring 2008).
+\end{itemize}
+MIT Undergraduate Research Opportunities Program
+\begin{itemize}
+Research mentor (Spring 2007).
+\end{itemize}
+Small Talks (institute-wide; talks by students, for students)
+\begin{itemize}
+Webmaster (Spring 2007).
+\end{itemize}
+Eta Kappa Nu (HKN), Berkeley, CA
+\begin{itemize}
+Vice President (Spring 2006) and Activities Committee Chair (Spring 2005) of campus chapter of Eta Kappa Nu, a national electrical engineering honor society. Received national outstanding chapter awards for 2004-05 and 2005-06.
+\end{itemize}
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
+

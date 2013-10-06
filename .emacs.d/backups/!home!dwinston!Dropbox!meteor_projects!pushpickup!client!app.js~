@@ -1,0 +1,11 @@
+Template.app.helpers({
+  showAbout: function () {
+    return Session.get("showAbout");
+  }
+});
+
+Template.app.events({
+  "click #about": function () {
+    Session.set("showAbout", !Session.get("showAbout"));
+  }
+});

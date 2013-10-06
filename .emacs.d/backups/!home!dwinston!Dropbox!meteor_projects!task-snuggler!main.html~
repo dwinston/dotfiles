@@ -1,0 +1,123 @@
+<head>
+  <title>Task Snuggler</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        <div id="signin-ui">{{loginButtons align="right"}}</div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span6">
+        <div class="span12">
+          {{> addEvent}}
+          {{> inputForm}}
+        </div>
+        <div class="span12">
+          {{> dashboard}}
+        </div>
+      </div>
+      <div class="span6">
+        {{> calendar}}
+      </div>
+    </div>
+  </div>
+  <footer>
+    {{> copyright}}
+  </footer>
+</body>
+
+<template name="addEvent">
+  <div id="addEvent">
+    <h1>Event editing</h1>
+    <p>Add events by clicking and dragging on the calendar.<br>
+      Delete events by clicking on an event.</p>
+  </div>
+</template>
+
+<template name="inputForm">
+  <div>
+    <h1>Add Commitment</h1>
+    <form id="addCommitment" class="form-inline">
+      I commit to 
+      <input type="text" class="input-mini" required="required"
+             id="title" placeholder="meditate">
+      for       
+      <input type="number" min="0.5" step="0.5" required="required"
+             id="hoursPerSession" class="input-mini" placeholder="2">
+      hours, 
+      <input type="number" min="1" step="1" required="required"
+             id="numSessions" class="input-mini" placeholder="3">
+      times/week.
+      <button type="submit" class="btn">Add</button>
+    </form>
+  </div>
+</template>
+
+<template name="dashboard">
+  <div id="dashboard">
+    <h1>Dashboard</h1>
+    Commitments:
+    <ul id="commitments">
+      {{#each commitments}}
+      {{> commitment}}
+      {{/each}}
+    </ul>
+    Event Generation Algorithm:
+    <select id="algorithmSelection" class="input-large">
+      <option value="safeRandomMomentFromNow" selected>
+        One at a time, random and non-conflicting, between now and end of week
+      </option>
+      <option value="randomMomentFromNow">
+        One at a time, random, between now and end of week
+      </option>
+      <option value="evenlyDistributedMomentsFromNow">
+        All at once, evenly distributed, between now and end of week
+      </option>
+      <option value="learnedMomentsFromNow">
+        All at once, based on past preferences, between now and end of week
+      </option>
+    </select>
+    <div id="placeholder" style="width:500px;height:200px">
+    </div>
+  </div>
+</template>
+
+<template name="commitment">
+    <li id={{_id}} class="commitment {{selected}}">
+      {{#unless selected}}
+        {{title}} for {{hoursPerSession}} hours, 
+        {{numSessions}} times/week.
+      {{else}}
+        <form id="editCommitment" class="form-inline">
+          <input type="text" class="input-mini" required="required"
+                 id="titleToEdit" value="{{title}}">
+          for       
+          <input type="number" min="0.5" step="0.5" required="required"
+                 id="hoursPerSessionToEdit" class="input-mini" 
+                 value="{{hoursPerSession}}">
+          hours, 
+          <input type="number" min="1" step="1" required="required"
+                 id="numSessionsToEdit" class="input-mini" 
+                 value="{{numSessions}}">
+          times/week.
+          <button type="submit" class="btn">Edit</button>
+          <button id="removeCommitment" class="btn">Remove</button>
+        </form>
+      {{/unless}}
+    </li>
+</template>
+
+<template name="calendar">
+  <div id="calendar">
+  </div>
+</template>
+
+<template name="copyright">
+  <center>
+    Copyright &copy; {{yearOfProduction}}
+    Donny & Cameron
+  </center>
+</template>

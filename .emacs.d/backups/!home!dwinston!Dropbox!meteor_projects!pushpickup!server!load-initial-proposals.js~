@@ -1,0 +1,64 @@
+Meteor.startup(function () {
+//  if (Locations.find().count() === 0) {
+//    Locations.insert({
+//      name: "Maxwell Family Field",
+//      lngLat: [-122.252834, 37.872313]
+//    });
+//    Locations.insert({
+//      name: "San Pablo Park",
+//      lngLat: [-122.284174, 37.855581]
+//    });
+//  }
+
+  if ((Locations.find().count() !== 0) ||
+      (Proposals.find().count() !== 0)) {
+    return;
+  }
+
+  var record = null, locId = "", time = 0, sepIdx = -1;
+  var day, timeOfDay;
+  var now, today, todayIdx, msecFromMidnight, dayIdx, msec;
+  var dayDiff;
+  for (var i=0; i < pickupultimate_imported.length; i++) {
+    record = pickupultimate_imported[i];
+    if (record.latitude) {
+      locId = Locations.insert({
+        name: record["name"],
+        lngLat: [parseFloat(record["longitude"]), 
+                 parseFloat(record["latitude"])],
+      });
+      continue;
+    }
+
+//    sepIdx = record.prettyTime.indexOf(" ");
+//    day = record.prettyTime.substring(0, sepIdx);
+//    timeOfDay = record.prettyTime.substring(sepIdx + 1);
+//    msecFromMidnight = 
+//      allTimes[_.indexOf(timeNames, timeOfDay)]
+//      .msecFromMidnight;
+//    dayIdx = _.indexOf(dayNames, day);
+//    now = new Date();
+//    today = new Date(now.getFullYear(), 
+//                     now.getMonth(), 
+//                     now.getDate()).getTime(); // Beginning of today
+//    todayIdx = now.getDay();
+//    
+//    dayDiff = (dayIdx >= todayIdx) ? 
+//      (dayIdx - todayIdx) : (7 - todayIdx) + dayIdx;
+//
+//    if ((dayIdx === todayIdx) && 
+//        (msecFromMidnight < (now.getTime() - today))) {
+//      msec = today + (7 * msecPerDay) + msecFromMidnight;
+//    } else {
+//      msec = today + (dayDiff * msecPerDay) + msecFromMidnight;
+//    }
+//
+//    Proposals.insert({
+//      time: msec,
+//      locId: locId,
+//      notes: record.notes,
+//      following: [null],
+//      pushing: []
+//    });
+  }  
+});

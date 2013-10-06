@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osmosis</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h1>Osmosis</h1>
+    <div id="osmosis">
+      <video poster="ajax-loader.gif" id="osmosisVideo" loop autoplay> 
+        <source src="https://dl.dropboxusercontent.com/u/1252368/osmosis-via-caruso.webm" type='video/webm; codecs="vp8, vorbis"' />
+      </video>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+Template.location.info = function () {
+  var locId = Session.get("mapSelectedLocation");
+  return Locations.findOne(locId);
+};
+
+Template.location.proposals = function () {
+  var locId = Session.get("mapSelectedLocation");
+  return Proposals.find(
+    {locId: locId},
+    {sort: {time: 1, pushing: -1, following: -1}}
+  );
+};

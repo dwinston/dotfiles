@@ -1,0 +1,3 @@
+(defun crowdtilt-for-floodlights (datetime)
+  (or (crowdtilt datetime)
+      (custom-crowdtilt datetime)))

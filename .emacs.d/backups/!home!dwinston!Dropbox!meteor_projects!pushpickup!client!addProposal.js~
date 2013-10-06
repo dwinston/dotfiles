@@ -1,0 +1,58 @@
+Template.addProposal.helpers({
+  dayOptions: function () {
+    var date = new Date(); // Now, at first
+    date = new Date(date.getFullYear(), 
+                    date.getMonth(), 
+                    date.getDate()); // Beginning of today
+    var dayOptions = [];
+    var dayOfMonth = date.getDate();
+    var weekdayNum = date.getDay();
+    Session.setDefault("selectedDay", +date);
+    for (var i=0; i < 8; i++) {
+      dayOptions[i] = {timeAtMidnight: +date, 
+                       weekdayName: dayNames[weekdayNum]};
+      date.setDate(dayOfMonth + 1);
+      dayOfMonth = date.getDate();
+      weekdayNum = date.getDay();
+    }
+    return dayOptions;
+  },
+
+  timeOptions: function () {
+    var now = new Date();
+    var today = new Date(now.getFullYear(), 
+                         now.getMonth(), 
+                         now.getDate()); // Beginning of today
+    if (Session.equals("selectedDay", +today)) {
+      // Only list valid times for today
+      return allTimes.slice((4 * now.getHours()) + 
+                            Math.floor(now.getMinutes() / 15));
+    } else if (Session.equals("selectedDay", +today + 604800000)){
+      // 1000 * 60 * 60 * 24 * 7 -> 604800000 (one week from today)
+      return allTimes.slice(0, (4 * now.getHours()) + 
+                            Math.ceil(now.getMinutes() / 15));
+    } else {
+      return allTimes;
+    }
+  }
+});
+
+Template.addProposal.events({
+  "click #newProposalPost": function (evt, templ) {
+    var timeAtMidnight = +templ.find("#newProposalDay").value; 
+    var msecFromMidnight = +templ.find("#newProposalTime").value; 
+    var msec = timeAtMidnight + msecFromMidnight;
+    var locId = Session.get("mapSelectedLocation");
+
+    var propId = Proposals.insert({
+      time: msec,
+      locId: locId,
+      attending: [Meteor.userId()],
+      quorum: 10
+    });
+  },
+  "change #newProposalDay": function (evt, templ) {
+    Session.set("selectedDay", 
+                +$("#newProposalDay").find(":selected").val());
+  }
+});

@@ -1,0 +1,7 @@
+var startedAt = +new Date(2013,7,19);
+var duration = 7642098; // 7642.098 seconds via video.duration
+
+window.onload = function() {
+  var video = document.getElementById('osmosisVideo');
+  video.currentTime = ((Date.now() - startedAt) % duration) / 1000;
+};

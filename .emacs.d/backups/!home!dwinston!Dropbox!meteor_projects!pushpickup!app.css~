@@ -1,0 +1,161 @@
+/* CSS declarations go here */
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .copy, .map {
+        padding: 2.5% 10%;
+    }
+}
+
+body {
+    text-align: center;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+p.lead {
+    padding-top: 1.5%;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* Marketing Copy */
+.copy {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    text-align: justify;
+}
+.asset {
+    padding: 2.5% 0%;
+}
+
+a {
+    cursor: pointer;
+}
+
+#signInOut {
+    text-align: right;
+}
+
+#hello {
+    padding-top: 40px;
+}
+
+h1, h2, h3 {
+    line-height: 1;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.7em;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #999;
+}
+
+h3 {
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #999;
+}
+
+footer {
+    margin-top: 2.5%;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea;
+    color: #999;
+    text-align: center;
+}
+footer a {
+    color: #555;
+}
+footer a:hover {
+    color: #222;
+}
+footer small {
+    float: left;
+}
+footer ul {
+    float: right;
+    list-style: none;
+}
+footer ul li {
+    float: left;
+    margin-left: 30px;
+}
+
+/* May not need the first line.
+   This is all so Google Maps plays well
+   with Twitter Bootstrap.
+*/
+#map label { width: auto; display:inline; }
+#map img { max-width: none; }
+
+
+div.map-wrapper {
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+}
+div.map-wrapper > div { 
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+.map {
+}
+
+/*
+#map {
+    height: 400px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+
+#proposals {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proposal {
+    margin-bottom: 10px;
+}
+
+.when {
+    font-weight: bold;
+}
+
+.where {
+    color: #999;
+}
+
+.gameOnMsg {
+    color: green;
+}
+
+#newProposalDay, #newProposalTime, #newProposalNotes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fromFooterContent {
+    text-align: left;
+    margin-top: 40px;
+}
+.fromFooterContent h1 {
+    text-align: center;
+}

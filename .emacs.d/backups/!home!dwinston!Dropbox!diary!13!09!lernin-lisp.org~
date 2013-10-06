@@ -1,0 +1,37 @@
+* Questions
+
+* Notes
+
+How to design programs by Felleisen
+recommended by http://norvig.com/21-days.html
+free online at http://htdp.org/
+dead tree copy at Kresge: http://oskicat.berkeley.edu/record=b14278288~S1
+
+look up defn of "line noise"
+
+Type in Seibel: 
+"With a colon modifier, the ~[ can contain only two
+clauses; the directive consumes a single argument and processes the
+first clause if the argument is NIL and the second clause is
+otherwise." Second-to-last word should either be "if" or simply omitted.
+
+understand difference between defparameter and setq
+-- setq is setf specialized for variables. 
+-- modern style (according to Seibel) is to use setf only
+
+* Thoughts
+deliberate practice is to go just beyond your current ability.
+
+effective learning: task is well-defined, just beyond current ability, 
+informative and immediate feedback, and correction of mistakes
+
+to learn effectively: 
+1. Do, each task defined and stretching.
+2. Monitor, during and after, immediately.
+3. Correct mistakes.
+
+I feel overextended with Lisp. I don't grok slots and inheritance, and 
+without meaningful concrete examples, I don't see how I will.
+
+Auxiliary methods in the context of multiple inheritance warp my mind.
+I don't grok it.

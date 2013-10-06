@@ -1,0 +1,4 @@
+alias cdpp='cd ~/Dropbox/meteor_projects/pushpickup'
+alias cddi='cd ~/Dropbox/diary/13/07'
+
+export PATH=/usr/local/sbt/bin:$PATH

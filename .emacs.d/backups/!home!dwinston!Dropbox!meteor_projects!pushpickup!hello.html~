@@ -1,0 +1,6 @@
+<template name="hello">
+  <div id="hello">
+    <h1>Push Pickup</h1>
+    <h2>Get your game on</h2>
+  </div>
+</template>

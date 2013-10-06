@@ -1,0 +1,13 @@
+<template name="marketingCopy">
+  <div class="row-fluid">
+    <div class="offset1 span10">
+      <p class="lead">
+        Push for a game of
+        pickup <a href="http://en.wikipedia.org/wiki/Ultimate_(sport)"
+        target="_blank">ultimate frisbee</a> at a time you want, at a
+        field near you.
+      </p>
+    </div>
+  </div>
+</div>
+</template>

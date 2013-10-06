@@ -1,0 +1,226 @@
+var map, markers = [], markerAt;
+var newLocListener, newLocMarker;
+var loadUserBounds;
+Session.setDefault("mapBounds", null);
+Session.setDefault("mapSelectedLocation", "");
+Session.setDefault("addingLocation", false);
+Session.setDefault("newLocLngLat", null);
+
+var locStatus =  function (locId) {
+  var status = {active: false, gaming: false};
+  var currProposalsAtLoc = Proposals.find({locId: locId}).fetch();
+  status.active = currProposalsAtLoc.length > 0;
+  status.gaming = _.any(currProposalsAtLoc, function (p) {
+    // Has 'attending' property only if game is on
+    return !!p.attending;
+  });
+  return status;
+};
+
+// Google Maps' marker icons available in different colors at
+// e.g. https://maps.google.com/mapfiles/ms/icons/green-dot.png
+var icon = {
+  silent: "https://maps.google.com/mapfiles/ms/icons/red-dot.png",
+  active: "https://maps.google.com/mapfiles/ms/icons/yellow-dot.png",
+  gaming: "https://maps.google.com/mapfiles/ms/icons/green-dot.png"
+};
+var iconFor = function (loc) {
+  var status = locStatus(loc._id);
+  if (status.gaming) { 
+    return icon.gaming;
+  } else if (status.active) { 
+    return icon.active; 
+  } else { 
+    return icon.silent;
+  }
+};
+
+var tryHTML5Geolocation = function (map) {
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = new google.maps.LatLng(position.coords.latitude,
+                                       position.coords.longitude);
+      map.panTo(pos);
+    }, function() {
+      alert('Error: The Geolocation service failed.');
+    });
+  } else {
+    console.log('Error: Your browser doesn\'t support geolocation.');
+  }
+};
+
+// Need document to be loaded to access google and #map,
+// necessitating this wrapping in Meteor.startup().
+Meteor.startup(function () {
+  // Make it pretty. Why not?
+  google.maps.visualRefresh = true;
+
+  // Initialize map to Grove Park, Berkeley, CA USA
+  var mapOptions = {
+    zoom: 11,
+    center: new google.maps.LatLng(37.856287,-122.272274),
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    mapTypeControl: false,
+    panControl: false,
+    streetViewControl: false,
+    minZoom: 2
+  };
+  map = new google.maps.Map(
+    document.getElementById("map"), mapOptions);
+
+  loadUserBounds = function (user) {
+    var bounds = user && user.profile.lngLatBounds;
+    var latLngBounds = bounds && new google.maps.LatLngBounds(
+      new google.maps.LatLng(bounds[0][1], bounds[0][0]),
+      new google.maps.LatLng(bounds[1][1], bounds[1][0]));
+    var zoom = map.getZoom();
+    latLngBounds && map.fitBounds(latLngBounds);
+    map.setZoom(zoom);
+  };
+  
+  markerAt = function (loc) {
+    var latLng, marker;
+    latLng = new google.maps.LatLng(loc.lngLat[1], loc.lngLat[0]);
+    marker = new google.maps.Marker({
+      position: latLng,
+      icon: iconFor(loc)
+    });
+    marker.set("locId", loc._id);
+    return marker;
+  };
+
+  // GLOBAL! (used by client/proposal.js)
+  getMarker = function (locId) {
+    return _.find(markers, function (m) {
+      return m.locId === locId;
+    });
+  };
+
+  google.maps.event.addListener(
+    map, 
+    'idle',
+    function () { 
+      var bounds = map.getBounds();
+      var SW = bounds.getSouthWest();
+      var NE = bounds.getNorthEast();
+      Session.set("mapBounds", 
+                  [[SW.lng(), SW.lat()], 
+                   [NE.lng(), NE.lat()]]); 
+      Session.set("mapSelectedLocation", "");
+    }
+  );
+
+  Deps.autorun(function() {
+    loadUserBounds(Meteor.user());
+  });
+  Deps.flush();
+
+  Deps.autorun(function() {
+    var bounds = Session.get("mapBounds");
+    bounds && Meteor.subscribe('locationsAndProposals', bounds);
+  });
+  
+  var deleteMarkers = function () {
+    if (markers) {
+      for (i in markers) {
+        markers[i].setMap(null);
+      }
+      markers.length = 0;
+    }
+  };
+
+  var showMarkers = function () {
+    if (markers) {
+      for (i in markers) {
+        markers[i].setMap(map);
+      }
+    }
+  };
+
+  Deps.autorun(function() {
+    // When Locations subscription updates, 
+    //   delete current markers and add new markers.
+
+    deleteMarkers();
+    Locations.find().forEach(function (loc) {
+      markers.push(markerAt(loc));
+    });
+    showMarkers();
+    //console.log(markers.length + ' markers rendered on map');
+
+    _.each(markers, function (marker) {
+      google.maps.event.addListener(marker, 'click', function() {
+        Session.set("mapSelectedLocation", marker.get("locId"));
+        $(document.body).animate({
+          'scrollTop': $('#listing').offset().top
+        }, 400);
+      });
+    });
+  });
+  
+  $(function () { 
+    $("input").not("[type=submit]").jqBootstrapValidation(); 
+  });
+});
+
+Template.map.helpers({
+  addingLocation: function () { 
+    return Session.get("addingLocation");
+  },
+  haveCoordinates: function () {
+    return !!Session.get("newLocLngLat");
+  }
+});
+
+var addLocationReset = function () {
+  newLocMarker && newLocMarker.setMap(null);
+  newLocListener && google.maps.event.removeListener(newLocListener);
+  Session.set("addingLocation", false);
+  Session.set("newLocLngLat", null);
+};
+
+Template.map.events({
+  "click #detectLocation": function () {
+    tryHTML5Geolocation(map);
+    map.setZoom(11);
+  },
+  "click #addLocation": function () {
+    newLocListener = google.maps.event.addListener(
+      map, 'click', function(e) {
+        var position = e.latLng;
+        newLocMarker && newLocMarker.setMap(null);
+        newLocMarker = new google.maps.Marker({
+          position: position,
+          map: map
+        });
+        Session.set("newLocLngLat", 
+                    [position.lng(), position.lat()]);
+
+      }
+    );
+    Session.set("addingLocation", true);
+  },
+  "click #neverMind": function () {
+    addLocationReset();
+  },
+  "submit #newLocForm": function (evt, templ) {
+    var locId = Locations.insert({
+      name: templ.find('#newLocName').value,
+      lngLat: Session.get("newLocLngLat")
+    });
+    addLocationReset();
+    Meteor.subscribe('locationsAndProposals', 
+                     Session.get("mapBounds"));
+    return false;
+  },
+  "click #setHome": function () {
+    var bounds = Session.get("mapBounds");
+    bounds && Meteor.users.update(
+      Meteor.userId(),
+      {$set: {'profile.lngLatBounds': bounds}},
+      function (err) {
+        console.log('profile.lngLatBounds update attempted');
+      }
+    );
+  }
+});

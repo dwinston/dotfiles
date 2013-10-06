@@ -1,0 +1,3 @@
+C-c C-c - slime-compile-defun
+C-c C-l load file
+C-c C-k compile file

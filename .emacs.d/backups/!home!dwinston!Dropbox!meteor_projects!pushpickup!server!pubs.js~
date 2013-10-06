@@ -1,0 +1,14 @@
+Meteor.publish('locationsAndProposals', function(bounds) {
+  var locs = Locations.find(
+    {lngLat: {$geoWithin: {$box: bounds}}}
+  );
+  var locIds = locs.map(function (loc) { return loc._id; });
+  locs.rewind(); // Resets the query cursor after map().
+
+  // Proposals from up to an hour ago may be considered "current"
+  return [locs, 
+          Proposals.find({
+            locId: {$in: locIds},
+            time: {$gt: Date.now() - 3600000}
+          })];
+});

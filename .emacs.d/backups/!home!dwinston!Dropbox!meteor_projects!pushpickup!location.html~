@@ -1,0 +1,21 @@
+<template name="location">
+  <h2 id="locationName">{{info.name}}</h2>
+  <div id="proposals">
+    {{#each proposals}}
+      {{> proposal}}
+    {{/each}}
+  </div>
+  {{#if info}}
+    {{#if currentUser}}
+      <div class="row-fluid">
+        <div class="offset2 span8">
+          {{> addProposal}}
+        </div>
+      </div>
+    {{else}}
+      <div class="noCurrentUser">
+        Please <a class="signIn">sign in</a> to add a proposal.
+      </div>
+    {{/if}}
+  {{/if}}
+</template>

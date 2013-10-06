@@ -1,0 +1,5 @@
+*.docx
+*.pdf
+*.doc
+*.log*.hg
+*.hgignore

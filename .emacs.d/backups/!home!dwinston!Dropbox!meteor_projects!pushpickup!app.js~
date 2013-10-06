@@ -1,0 +1,6 @@
+// These are deliberately global
+Proposals = new Meteor.Collection('proposals');
+Locations = new Meteor.Collection('locations');
+
+APPNAME = "Push Pickup";
+QUORUM = 10;

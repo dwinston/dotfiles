@@ -1,0 +1,9 @@
+;;; (if-range (0 <= x < 3) conseq subseq)
+;;; (if (and (<= 0 x) (< x 3)) conseq subseq)
+
+(defmacro if-range ((min min-comp var max-comp max) conseq subseq)
+  `(if (and (,min-comp ,min ,var) (,max-comp ,var ,max))
+       ,conseq
+       ,subseq))
+
+(1 2 3) 

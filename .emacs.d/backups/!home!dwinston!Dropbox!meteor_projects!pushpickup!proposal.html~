@@ -1,0 +1,66 @@
+<template name="proposal">
+  <div id="{{_id}}" class="proposal">
+    <div class="when">{{startsAt}}</div>
+    <div class="where">
+      {{locName}} 
+      <a class="bounceMarker">
+        <i class="icon icon-eye-open"></i>
+      </a>
+    </div>
+    
+    {{#if gameOn}} 
+      <div class="gameOnMsg">Game On!</div> 
+      <div class="stats">
+        {{numAttending}} attending 
+      </div>
+    {{else}}
+      <div class="stats">
+        {{numPushing}} pushing, {{numJustFollowing}} just following 
+      </div>
+    {{/if}}
+    
+    {{#if currentUser}}
+
+      {{#if gameOn}}
+
+        <div class="attendOrNot">
+          {{#if isAttending}}
+            attend | <a class="unattend">unattend</a>
+          {{else}}
+            <a class="attend">attend</a> | unattend
+          {{/if}}         
+        </div> 
+        
+      {{else}}
+
+        <div class="followOrNot">
+          {{#if isFollowing}}
+            follow | <a title="{{tooltipFollow}}" 
+                        class="unfollow">unfollow</a>
+          {{else}}
+            <a title="{{tooltipFollow}}" 
+               class="follow">follow</a> | unfollow
+          {{/if}}
+        </div>
+        
+        <div class="pushOrNot">
+          {{#if isPushing}}
+            push | <a title="{{tooltipPush}}"
+                      class="unpush">unpush</a>
+          {{else}}
+            <a title="{{tooltipPush}}"
+               class="push">push</a> | unpush
+          {{/if}}
+        </div>
+        
+      {{/if}}
+
+    {{else}}
+
+      <div class="noCurrentUser">
+        Please <a class="signIn">sign in</a> to participate.
+      </div>
+
+    {{/if}}
+  </div>
+</template>

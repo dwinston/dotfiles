@@ -1,0 +1,288 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/dwinston/Dropbox/meteor_projects/my-todos/" . "client/")
+ ("/home/dwinston/Dropbox/meteor_projects/moment_select_ui/" . "packages/")
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/libraries/" . "cl-ppcre-1.2.3/")
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/" . "Chapter25/")
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/" . "practicals-1.0.3/")
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/" . "book/")
+ ("/home/dwinston/.config/common-lisp/" . "source-registry.conf.d/")
+ ("/home/dwinston/.config/" . "common-lisp/")
+ ("/home/dwinston/Dropbox/diary/13/09/" . "lisp/")
+ ("/home/dwinston/Dropbox/meteor_projects/parties/" . "public/")
+ ("/home/dwinston/Dropbox/meteor_projects/todos/" . "client/")
+ ("/home/dwinston/Dropbox/meteor_projects/task-snuggler/moment-generators/" . "lib/")
+ ("/home/dwinston/Dropbox/docs/" . "resume and cv/")
+ ("/home/dwinston/Dropbox/meteor_projects/task-snuggler/" . "client/")
+ ("/home/dwinston/Dropbox/diary/13/08/fullcalendar-1.6.2/" . "demos/")
+ ("/home/dwinston/Dropbox/diary/13/08/" . "fullcalendar-1.6.2/")
+ ("/home/dwinston/.emacs.d/" . "backups/")
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/config/" . "environments/")
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/app/views/" . "static_pages/")
+ ("/home/dwinston/coursera-startup/hw4/" . "bitstarter/")
+ ("/home/dwinston/coursera-startup/" . "bitstarter/")
+ ("/home/dwinston/Dropbox/meteor_projects/pushultimate/public/" . "images/")
+ ("/" . "scripts/")
+ ("/home/dwinston/Dropbox/meteor_projects/pushpickup/" . "client/")
+ ("/home/dwinston/Dropbox/meteor_projects/pushultimate/" . "client/")
+ ("/home/dwinston/Dropbox/personal-projects/coursera-startup/" . "hw3/")
+ ("/home/dwinston/Dropbox/personal-projects/" . "kspace-osmosis/")
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/app/assets/" . "stylesheets/")
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/app/" . "views/")
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/" . "app/")
+ ("/home/dwinston/Dropbox/rails_projects/" . "push_pickup/")
+ ("/home/dwinston/Dropbox/meteor_projects/" . "my-todos/")
+ ("/home/" . "dwinston/")
+ ("/home/dwinston/Dropbox/diary/13/" . "09/")
+ ("/home/dwinston/Dropbox/diary/" . "13/")
+ ("/home/dwinston/Dropbox/" . "diary/")
+ ("/home/dwinston/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/dwinston/"
+ "/home/dwinston/.emacs.d/"
+ "/home/dwinston/Dropbox/meteor_projects/my-todos/client/"
+ "/home/dwinston/Dropbox/meteor_projects/my-todos/server/"
+ "/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter25/"
+ "/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter24/"
+ "/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter08/"
+ "/home/dwinston/Dropbox/diary/13/09/lisp/"
+ "/home/dwinston/Dropbox/diary/13/09/"
+ "/home/dwinston/Dropbox/meteor_projects/moment_select_ui/"
+ "/home/dwinston/Dropbox/meteor_projects/task-snuggler/client/"
+ "/home/dwinston/Dropbox/meteor_projects/task-snuggler/"
+ "/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter23/"
+ "/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/libraries/cl-ppcre-1.2.3/"
+ "/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter03/"
+ "/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/"
+ "/home/dwinston/.config/common-lisp/source-registry.conf.d/"
+ "/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter09/"
+ "/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter15/"
+ "/home/dwinston/Dropbox/meteor_projects/task-snuggler/moment-generators/"
+ "/home/dwinston/Dropbox/meteor_projects/task-snuggler/server/"
+ "/home/dwinston/Dropbox/meteor_projects/task-snuggler/moment-generators/lib/"
+ "/home/dwinston/Dropbox/meteor_projects/parties/"
+ "/home/dwinston/Dropbox/meteor_projects/todos/client/"
+ "/home/dwinston/Dropbox/meteor_projects/todos/.meteor/"
+ "/home/dwinston/Dropbox/meteor_projects/todos/server/"
+ "/home/dwinston/Desktop/"
+ "/home/dwinston/Dropbox/diary/13/08/"
+ "/home/dwinston/Dropbox/personal-projects/kspace-osmosis/"
+ "/home/dwinston/Dropbox/"
+ "/home/dwinston/Dropbox/meteor_projects/pushpickup/"
+ "/home/dwinston/Dropbox/meteor_projects/task-snuggler/lib/"
+ "/home/dwinston/Dropbox/meteor_projects/pushpickup/client/"
+ "/home/dwinston/Dropbox/meteor_projects/pushpickup/server/"
+ "/home/dwinston/coursera-startup/bitstarter/"
+ "/home/dwinston/dotfiles/"
+ "/home/dwinston/Dropbox/docs/resume and cv/"
+ "/home/dwinston/Dropbox/diary/13/08/fullcalendar-1.6.2/demos/"
+ "/home/dwinston/.emacs.d/backups/"
+ "/home/dwinston/Dropbox/rails_projects/push_pickup/app/views/static_pages/"
+ "/home/dwinston/Dropbox/meteor_projects/pushultimate/"
+ "/home/dwinston/.meteoric.sh/"
+ "/home/dwinston/Dropbox/personal-projects/meteoric.sh/"
+ "/home/dwinston/Dropbox/rails_projects/push_pickup/config/environments/"
+ "/home/dwinston/Dropbox/rails_projects/push_pickup/app/assets/stylesheets/"
+ "/home/dwinston/.emacs.d~/"
+ "/home/dwinston/coursera-startup/hw4/bitstarter/"
+ "/home/dwinston/Dropbox/meteor_projects/pushpickup/lib/"
+ "/home/dwinston/Dropbox/meteor_projects/pushultimate/client/"
+ "/home/dwinston/Dropbox/meteor_projects/pushultimate/server/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "gffgd"
+ "init.el"
+ "todos.html"
+ "bootstrap.js"
+ "publish.js"
+ "todos.js"
+ "id3v2.lisp"
+ "binary-data.lisp"
+ "packages.lisp"
+ "macro-utilities.lisp"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/dwinston/.emacs.d/backups/" (21071 25033 824639 915000) "!home!dwinston!meteoric-repo!meteoric.sh~" "!home!dwinston!Dropbox!diary!13!09!chat-with-ron-garrett.txt~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!private!usernames.json~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!moment-generators!lib!initialize.js~" "!home!dwinston!.emacs.d!url!cookies~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!help.html~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!moment-generators!learnedMomentsFromNow.js~" "!home!dwinston!Dropbox!diary!13!09!meteor-learning.org~" "!home!dwinston!Dropbox!personal-projects!meteoric.sh!meteoric.sh~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!footer.html~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!client!dashboard.js~" "!home!dwinston!meteoric-setup.sh~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!moment-generators!lib!main.js~" "!home!dwinston!Dropbox!personal-projects!kspace-osmosis!.gitignore~" "!home!dwinston!Dropbox!meteor_projects!moment_select_ui!main.html~" "!home!dwinston!coursera-startup!bitstarter!index.html~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!server!load-initial-proposals.js~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!app.js~" "!home!dwinston!meteoric-repo!meteoric.config.sh~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!server!profile.js~" "!home!dwinston!Dropbox!diary!13!08!something-wlk.js~" "!home!dwinston!Dropbox!diary!13!09!lisp!unit-test.lisp~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!moment-generators!safeRandomMomentFromNow.js~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!client!loginPage.js~" "!home!dwinston!Dropbox!diary!13!08!results.txt~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!moment-generators!evenlyDistributedMomentsFromNow.js~" "!home!dwinston!Dropbox!diary!13!09!lisp!useful-commands.org~" "!home!dwinston!.meteoric.sh!meteoric.sh~" "!home!dwinston!Dropbox!diary!13!09!xooglers-notes.org~" "!home!dwinston!Dropbox!diary!13!09!lernin-lisp.org~" "!home!dwinston!Dropbox!diary!13!09!crowdtilt-for-floodlights.lisp~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!moment-generators!randomMomentFromNow.js~" "!home!dwinston!.emacs.d!elpa!popup-0.5!popup-autoloads.el~" "!home!dwinston!coursera-startup!hw4!bitstarter!index.html~" "!home!dwinston!.ido.last~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!client!google-calendar-sync.js~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!server!initialize.js~" "!home!dwinston!Dropbox!diary!13!09!lisp!spam.lisp~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!client!proposal.js~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!app.html~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!client!footer.js~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!about.html~" "!home!dwinston!Dropbox!personal-projects!kspace-osmosis!main.css~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!server!allow-deny.js~" "!home!dwinston!.emacs.d!elpa!ac-slime-0.3!ac-slime-autoloads.el~" "!home!dwinston!Dropbox!diary!13!08!google-travel.txt~" "!home!dwinston!Dropbox!diary!13!09!lisp!load.lisp~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!meteoric.config.sh~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!client!app.js~" "!home!dwinston!.config!common-lisp!source-registry.conf.d!01-seibel-practical-common-lisp.conf~" "!home!dwinston!Dropbox!diary!13!08!Sun Tzu on the Art of War.html~" "!home!dwinston!Dropbox!diary!13!09!lisp!retro-games.lisp~" "!home!dwinston!Dropbox!meteor_projects!moment_select_ui!main.js~" "!home!dwinston!.ssh!config~" "!home!dwinston!.gitconfig~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!server!permissions.js~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!addProposal.html~" "!home!dwinston!meteoric-deploy.sh~" "!home!dwinston!Dropbox!docs!resume and cv!.gitignore~" "!home!dwinston!Dropbox!meteor_projects!my-todos!client!todos.html~" "!home!dwinston!Dropbox!docs!resume and cv!resume.tex~" "!home!dwinston!Dropbox!diary!13!09!lisp!pathnames.lisp~" "!home!dwinston!Dropbox!diary!13!08!ways-to-make-a-dollar-in-cash.js~" "!home!dwinston!dotfiles!.bashrc_custom~" "!home!dwinston!Dropbox!diary!13!08!numSetsOfKCommitmentEvents.rb~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!app.css~" "!home!dwinston!.emacs.d!elpa!handlebars-sgml-mode-0.1.0!handlebars-sgml-mode-autoloads.el~" "!home!dwinston!Dropbox!personal-projects!kspace-osmosis!index.html~" "!home!dwinston!Desktop!scratch.rb~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!client!map.js~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!location.html~" "!usr!local!bin!ccl~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!main.js~" "!home!dwinston!Dropbox!diary!13!09!lisp!numbers.lisp~" "!home!dwinston!Dropbox!diary!13!09!lisp!generic-functions.lisp~" "!home!dwinston!dotfiles!.emacs.d!init.el~" "!home!dwinston!Desktop!HelloWorld.java~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!hello.html~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!client!location.js~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!lib!initialize-tsnug.js~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!server!pubs.js~" "!home!dwinston!.recentf~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!server!pubs.js~" "!home!dwinston!coursera-startup!hw4!bitstarter!web.js~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!server!google-calendar-sync.js~" "!home!dwinston!Dropbox!personal-projects!meteoric.sh!meteoric.config.sh~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!main.html~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!client!inputForm.js~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!server!location-activity.js~" "!home!dwinston!Desktop!App.java~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!map.html~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!marketingCopy.html~" "!home!dwinston!.emacs.d!elpa!auto-complete-1.4!auto-complete-autoloads.el~" "!home!dwinston!Dropbox!meteor_projects!my-todos!client!todos.js~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!client!initialize.js~" "!home!dwinston!Dropbox!personal-projects!kspace-osmosis!main.js~" "!home!dwinston!Dropbox!diary!13!09!lisp!hello.lisp~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!client!map.html~" "!home!dwinston!temp!numGoogSF.rb~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!client!addProposal.js~" "!home!dwinston!Dropbox!www.gigamonkeys.com!book!practicals-1.0.3!practicals.asd~" "!home!dwinston!Desktop!Exercise.java~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!ideas.org~" "!home!dwinston!Dropbox!meteor_projects!task-snuggler!main.css~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!proposal.html~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!client!mainpage.js~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!server!email.js~" "!home!dwinston!Dropbox!meteor_projects!pushpickup!server!location-status.js~" "../" "./")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter23/" (21070 5407 373436 642000) "spam.lx32fsl" "chapter-23.asd" "packages.lx32fsl" "spam.lisp" "spam.asd" "packages.lisp" "./" "../")
+
+ ("/home/dwinston/Dropbox/diary/13/09/lisp/" (21071 25264 361783 98000) "pathnames.lx32fsl" "pathnames.lisp" "load.lisp" "load.lx32fsl" "retro-games.lisp" "hello.lisp" "#loop.lisp#" "spam.lx32fsl" "unit-test.lx32fsl" "numbers.lx32fsl" "generic-functions.lisp" "useful-commands.org" "packages.lx32fsl" "spam.lisp" "packages.lisp" "#retro-games.lisp#" "numbers.lisp" "./" ".#retro-games.lisp" "hello.lx32fsl" "unit-test.lisp" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/my-todos/client/" (21071 18881 18129 786000) "todos.html" "todos.js" "todos.css" "./" "#todos.html#" "../")
+
+ ("/home/dwinston/.emacs.d/" (21071 24509 6037 464000) "session.1011139883b50eaabe137632950729523400000012310142" "ac-comphist.dat" "defuns-config.el" "column-marker.el" "jade-mode/" "linum.el" "init.el" "js-config.el" "url/" "session.1053664290b03d8ac2137719125395493300000011850121" "session.104bd689f9dcb9b4d713746242067156000000012400062" "node_emacs" "whitespace.el" "session.10dc4d31e2a7efe11c137478807395509200000012410043" "./" "js-comint.el" "backups/" "smooth-scrolling.el" "elpa/" "../" "auto-save-list/")
+
+ ("/home/dwinston/" (21071 24509 38037 634000) "200px-IGBT_N-dep_symbol_(case).svg.png" "gnome-terminal-zenburn.sh" "event-util.js~" ".icedtea/" "js2-mode/" "key.txt" "basic.html" "donny-public.key" ".bash_eternal_history" ".goutputstream-NQOJ2W" "WebStorm-127.122/" ".goutputstream-ZRS2UW" "1269583_Pirkei_Avot_Ch._1_Mishnah_1_Lesson_1.mp3" "portableaserve/" ".Xmodmap" ".vim/" ".bash_profile" ".fonts/" "crockford-01-v2ifWcnQs6M.m4a" "crockford-14-taaEzHI9xyY.m4a" "donny-revoke.asc" ".opera/" "eclipse/" ".cljr/" "message.txt" ".pythonstartup.py" ".mozilla/" ".jline-clojure.main.history" "basic.js" ".meteorite/" ".irssi/" ".slime-history.eld" ".macromedia/" ".thumbnails/" "Anki/" ".Skype/" ".newsrc-dribble~" ".m2/" "Documents/" ".gvfs/" "coursera-startup/" ".gnome2/" ".goutputstream-JA12RW" "basic.css" "jQuery-Timepicker-Addon/" ".dmrc" "meteor/" ".sqlite_history" ".gstreamer-0.10/" "Desktop/" ".gem/" "tor-browser_en-US/" ".recentf" ".ICEauthority" ".psql_history" "News/" ".screenrc" "scratch.js~" ".fontconfig/" "lein" ".VirtualBox/" "Envs/" "cc/" ".bashrc_custom" "play.txt" "donny-public-kspace-signed.key" "Videos/" ".rvm/" "contestapplet.conf" "portableaserve-1.2.35.tar.gz" ".gnupg/" "Mail/" ".npm/" "NC_007779.ptt" "config_postfix_for_tls~" "id_rsa.pub" ".virtualenvs/" "message-decrypted.txt" ".zprofile" "tor-browser-gnu-linux-i686-2.3.25-8-dev-en-US.tar.gz" ".meteoric.sh/" ".gksu.lock" ".pulse/" ".shotwell/" "crockford-02-RO1Wnu-xKoY.m4a" "Audio/" "local/" ".pip/" "jquery-2.0.1.min.js" ".subversion/" ".gphoto/" "donny@pushpickup.com" ".gegl-0.0/" ".xsession-errors.old" "basic.js~" ".matplotlib/" "Downloads/" "Public/" ".compiz-1/" ".arista/" "tmp/" "Ubuntu One/" "myfile.fas" "Douglas Crockford - The JavaScript Programming Language-v2ifWcnQs6M.flv.part" ".gtk-bookmarks" "kspace-fingerprint.key~" "user_space_report.txt" "for_ryan.m4a" "keysigning.pdf" "Templates/" "donny-private.key" ".dbus/" ".bashrc" ".gitconfig" ".ccl-init.lisp" ".thunderbird/" "#scratch.js#" ".gemrc" "foo.txt" ".node-gyp/" "bike-lights.fzz" ".Xauthority" "racket-5.3.4-bin-i386-linux-ubuntu-karmic.sh" ".netrc" "Google I_O 2009 - The Myth of the Genius Programmer-0SARbwvhupQ.mp3" "message-private.txt" ".local/" "fritzing-0.7.12b.linux.i386.tar.bz2" ".pencil/" ".zshrc" ".bash_logout" "my-cds.db" "scratch.js" ".WebStorm6/" "Pictures/" ".node_history" ".lein/" "door/" ".xchat2/" "myfile.lib" ".dvdcss/" ".location_details" "kspace-fingerprint.key" ".anyconnect" ".swt/" ".irbrc" ".cache/" ".java/" "spamassassin-publiccorpus/" ".nvm/" "Music/" ".goutputstream-5A2MXW" "professsional_js_3rd.pdf" "dwinston-assets.pdf" "myfile.lisp~" "#streamrecord-setup.sh#" "hello.txt" "C:\\nppdf32Log\\debuglog.txt" ".ido.last~" "bin/" ".myfile.lisp.swp" "libpeerconnection.log" "dotfiles/" ".emacs.d~/" "cl-unicode.tar.gz" ".dropbox/" ".gconf/" ".pulse-cookie" "config_postfix_for_tls" "Grasshopper Divert _ Single Cam-2t15vP1PyoA.mp4.part" "VirtualBox VMs/" ".slime/" ".bash_history" "missfont.log" ".purple/" "tennis-finder-details.tar.gz" ".vnc/" ".adobe/" ".guard_history" ".lesshst" "event-util.js" "#event-util.js#" ".gnome/" ".mongorc.js" ".mplayer/" "ccl/" ".smex-items" ".recentf~" ".mission-control/" "setup/" "quicklisp.lisp" "WebStorm-6.0.1a.tar.gz" ".gorillarc" "meteoric-setup.sh" "markerclusterer/" ".ssh/" "examples.desktop" "What's In It for Me Benefits from Open Sourcing Code-ZtYJoatnHb8.m4a" ".gimp-2.6/" ".launchpadlib/" ".bash_profile~" "crockford-03-ya4UHuXNygM.m4a" "Dropbox/" ".heroku/" "meteoric-repo/" ".config/" ".newsrc-dribble" "pushpickup.tar.gz" "dwinst-aws.pem" "quicklisp/" ".marks/" ".viminfo" "live-cljs/" "deployer@pushpickup.com" ".audacity-data/" ".xsession-errors" ".meteor/" "contestapplet.conf.bak" ".ido.last" "bike lights.fz" "sbt.tgz" ".bashrc~" "meteoric-deploy.sh" "temp/" "basic.html~" ".pki/" ".vimrc" "awshost1" ".Xmodmap~" ".dropbox-dist/" ".racket/" ".rnd" "e01_before.js" ".emacs.d/" ".goutputstream-O11ZYW" "meteor-methods.mp4" ".gnome2_private/" ".mutt/" ".profile" "../" "./")
+
+ ("/home/dwinston/Dropbox/diary/13/09/" (21071 21328 350265 463000) "xooglers.pdf" "slime-superior-lisp-interaction-mode-for-emacs.pdf" "ymca-schedule-sep-2013.pdf" "ClaimNumber1Whoah.png" "crowdtilt-for-floodlights.lisp" "lernin-lisp.org" "chat-with-ron-garrett.txt" "xooglers-notes.org" "meteor-learning.org" "roots-of-lisp.ps" "crowdtilt-for-floodlights.org" "Documentation - Meteor.html" "./" "underscore.js.html" "ETE2013-RichHickey-DesignCompositionandPerformance.pdf" "goog-car-rental" "crowdtilt-for-floodlights.txt" "backbone.js.html" "lisp/" "CustomerServiceSummary-6173012103.pdf" "../" "Documentation - Meteor_files/")
+
+ ("/home/dwinston/Dropbox/meteor_projects/my-todos/server/" (21053 38880 855151 747000) "publish.js" "bootstrap.js" "./" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/my-todos/" (21053 38880 855151 747000) "client/" "server/" "public/" "./" ".meteor/" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/" (21071 15934 320552 20000) "leaderboard/" "my-todos/" "thoughtstream/" "pushultimate/" "parties/" "task-snuggler/" "pushpickup/" "pushpickup-persona/" "questions/" "./" "moment_select_ui/" "wordplay/" "../" "myapp/")
+
+ ("/home/dwinston/Dropbox/" (21071 17079 845198 256000) "Go/" "gtasks/" "SRIM2008_StoppingPlots-He.exe" "backup-verification-codes-dwinst.pdf" "my thinkpad x200s/" "ImageJ/" "nri_review/" ".Xmodmap" "receipt scans/" "bass tabs/" "railsguides/" "birthdays.txt~" "macg-tshirt-1.odg" "Calibre Library/" "joyos-read-only/" "StoppingPlots-He.exe:Zone.Identifier:$DATA" "Eclipse/" "projects/" "nist_icfcmn2009/" "eipbn2009/" "rails_projects/" "toprint/" "Hawryluk 1974 - LL TR 511.pdf" "thinkpad-x40-service-guide.PDF" "QNN Group Contact Information.pdf" "SRIM2008.exe:Zone.Identifier:$DATA" "6-270-15_team-joyous-cheese.jpg" "The_Beatles_1971/" "hp/" "birthdays.txt" "Microsoft Office 2007.zip" "jobsearch/" "My EndNote Library.Data/" "audio/" "notebook-nsl-cleanroom/" "todo.txt~" "6-701-spring-2010/" "todo.txt" "noisebridge/" "SRIM2008.exe" "karlshare/" "Photos/" "article dump/" "main.psafe3" "sicp/" "jentry/" "phonebook.txt" "Trac/" "ruby/" "IMG_0534.JPG" "Public/" ".picasa.ini" "notebook1/" "Group Meeting Slides/" "eipbn2010/" "texnicenter-projects/" "macg-tshirt-2.odg" "1Password.agilekeychain/" "thinkpad-x40-hardware-maintenance-manual.PDF" "WayStation_Orion/" "WebstormProjects/" "jquery/" "notebook-thesis/" "notebook2/" "lmms/" "notebook3/" "github/" ".ws.agile.1Password.settings" "sublet-fa10/" "BasicCAD/" "nabity-npgs/" "MATLAB/" "20090720 nist trip/" "lunch_roulette/" "eln/" "the_long_tail.mp3" "grt_or_notP.ods" "MIT student ID number.txt" "phdthesis-proposal/" "notebook0/" "hebeam lithography/" "land-of-lisp/" "python-install/" "pythondocs/" "mne09/" "MIT travel reimbursement.xls" "macg-tshirt-3.odg" "winston_36-245 desktop/" "PlainText/" "how to nap boston globe.gif" "6.005/" "recipes/" "scratch.txt" "http___scitation.aip.org.libproxy.mit.edu_getpdf_servlet_GetPDFServlet_filetype=pdf&id=JVTBD9000025000006002219000001&idtype=cvips&doi=10.1116_1.pdf" "qnnComputers/" "TimeSnapper/" "business-cards.doc" "transit/" "Screenshot.png" "references/" "modeling_hebeam/" "grokthestack/" "hebeam-newproject-ideas.ppt" "6.781/" "PENELOPE2008/" "layout/" ".dropbox" "today.txt" "proximity-GF-checkout/" "naval-special-warfare-physical-training-guide -- navy seal workout.pdf" "mit_athena_directory/" "endnote styles/" "store-hours.txt" "2.131/" "iPhone intro.pdf" "books/" "not.tif" "latex/" "AnonymousPro-Font-1.002.zip" "This is your Dropbox.txt" "putty.exe" "glasses-prescription.jpg" "music-text/" "install/" "rqe/" "www.gigamonkeys.com/" "two-step authentication.txt" "big-questions.txt" "Camera Uploads/" "caari2010/" "15 oak st apt 2 wireless wifi.txt" "Thumbs.db:encryptable" "12.515/" "HTTrack Web Sites/" "yamaha-riva-xc180/" "meteor_projects/" "big-questions.txt~" "donut_matrix_psf_pattern_CHECKOUT/" "dell-optiplex-gx270-docs/" "airline-memberships.txt" "hyperspec/" "OneNote Notebooks/" "medical_OMPReport-1.pdf" "group meeting slides of mine/" "medical_OMPReport.pdf" "SharePod_3.99/" "My EndNote Library.enl" "QNN - Winston/" "diary/" "Photo Feb 24, 12 02 18 PM.jpg" "6.270/" "gpg/" "personal-projects/" "donut_matrix_psf_pattern/" "dc2 file format.pdf" "current.dia" "rails/" "docs/" "periodic-table-wallet-size.PDF" "suprmem7/" "bills/" "alan_winston_family_historical.pdf" "node_projects/" "Attachments/" ".dropbox.cache/" "KeepFocused.exe" "../" "./")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter25/" (16985 39071 0 0) "id3v2.asd" "packages.lisp" "./" "chapter-25.asd" "id3v2.lisp" "../")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter24/" (21070 63287 706921 68000) "chapter-24.asd" "binary-data.asd" "packages.lx32fsl" "packages.lisp" "./" "binary-data.lisp" "../")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter08/" (21070 63268 582826 241000) "packages.lx32fsl" "chapter-8.asd" "packages.lisp" "./" "macro-utilities.lisp" "macro-utilities.asd" "../" "macro-utilities.lx32fsl")
+
+ ("/home/dwinston/Dropbox/meteor_projects/task-snuggler/server/" (21068 45797 891558 488000) "allow-deny.js" "pubs.js" "./" "initialize.js" "../")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter15/" (21068 35794 330828 861000) "pathnames.lx32fsl" "pathnames.lisp" "chapter-15.asd" "packages.lx32fsl" "packages.lisp" "pathnames.asd" "./" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/task-snuggler/client/" (21068 47807 541523 809000) "lib/" "google-calendar-sync.js" "fullcalendar.1.6.3.min.js" "fullcalendar.print.css" "jquery.flot.js" "inputForm.js" "fullcalendar.css" "calendar.js" "./" "footer.js" "initialize.js" "dashboard.js" "loginPage.js" "instruction.js" "../" "jquery.flot.time.js")
+
+ ("/home/dwinston/Dropbox/meteor_projects/moment_select_ui/" (21069 48287 827937 560000) "lib/" "packages/" "main.css" "main.js" "./" "main.html" ".meteor/" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/moment_select_ui/packages/" (21069 40383 823460 906000) "./" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/task-snuggler/" (21068 45797 891558 488000) "client/" "server/" "lib/" ".git/" "moment-generators/" "main.css" "main.js" "README.md" "./" "main.html" ".meteor/" "private/" "../")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/libraries/cl-ppcre-1.2.3/" (21068 35994 323820 570000) "README" "load.lisp" "load.lx32fsl" "api.lisp" "regex-class.lisp" "api.lx32fsl" "cl-ppcre.system" "util.lx32fsl" "parser.lisp" "optimize.lx32fsl" "lexer.lx32fsl" "closures.lx32fsl" "convert.lx32fsl" "doc/" "regex-class.lx32fsl" "repetition-closures.lx32fsl" "util.lisp" "scanner.lisp" "specials.lx32fsl" "packages.lx32fsl" "packages.lisp" "testinput" "CHANGELOG" "errors.lisp" "testdata" "errors.lx32fsl" "ppcre-tests.lisp" "./" "convert.lisp" "parser.lx32fsl" "ppcre-tests.lx32fsl" "cl-ppcre-test.asd" "closures.lisp" "lexer.lisp" "specials.lisp" "repetition-closures.lisp" "perltest.pl" "cl-ppcre.asd" "../" "cl-ppcre-test.system" "optimize.lisp" "scanner.lx32fsl")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/libraries/" (16932 59633 0 0) "cl-ppcre-1.2.3/" "./" "../")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/" (21068 38785 25658 919000) "Chapter27/" "README.txt" "Chapter15/" "Chapter31/" "Chapter28/" "Chapter29/" "Chapter25/" "Chapter32/" "LICENSE" "Chapter26/" "Chapter24/" "Chapter23/" ".p4change" "./" "Chapter09/" "Chapter08/" "practicals.asd" "libraries/" "../" "Chapter03/")
+
+ ("/home/dwinston/.config/common-lisp/source-registry.conf.d/" (21068 37246 502029 736000) "./" "../" "01-seibel-practical-common-lisp.conf")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter03/" (16985 39071 0 0) "simple-database.lisp" "packages.lisp" "chapter-3.asd" "./" "simple-database.asd" "../")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/practicals-1.0.3/Chapter09/" (16985 39071 0 0) "test-framework.asd" "packages.lisp" "chapter-9.asd" "./" "test.lisp" "../")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/book/" (21068 33238 489664 190000) "small-cover.gif" "practical-a-spam-filter.html" "practical-an-mp3-browser.html" "index.html" "collections.html" "screenshots/" "variables.html" "macros-defining-your-own.html" "practical-web-programming-with-allegroserve.html" "practicals-1.0.3/" "loop-for-black-belts.html" "practical-an-html-generation-library-the-compiler.html" "practical-an-id3-parser.html" "a-few-format-recipes.html" "syntax-and-semantics.html" "practical-parsing-binary-files.html" "practical-a-shoutcast-server.html" "letter-to-reader.html" "introduction-why-lisp.html" "the-special-operators.html" "practicals-1.0.3.tar.gz" "style.css" "jolt_logo16_sm.gif" "functions.html" "figures/" "./" "practical-a-portable-pathname-library.html" "object-reorientation-classes.html" "practical-a-simple-database.html" "conclusion-whats-next.html" "macros-standard-control-constructs.html" "practical-an-html-generation-library-the-interpreter.html" "beyond-lists-other-uses-for-cons-cells.html" "beyond-exception-handling-conditions-and-restarts.html" "files-and-file-io.html" "lather-rinse-repeat-a-tour-of-the-repl.html" "blurbs.html" "programming-in-the-large-packages-and-symbols.html" "practical-an-mp3-database.html" "object-reorientation-generic-functions.html" "practical-building-a-unit-test-framework.html" "numbers-characters-and-strings.html" "../" "they-called-it-lisp-for-a-reason-list-processing.html")
+
+ ("/home/dwinston/Dropbox/www.gigamonkeys.com/" (21063 33473 110589 932000) "book/" "./" "../")
+
+ ("/home/dwinston/.config/common-lisp/" (21068 34083 982347 706000) "source-registry.conf.d/" "./" "../")
+
+ ("/home/dwinston/.config/" (21068 34065 42253 764000) "totem/" "goa-1.0/" "google-googletalkplugin/" "monitors.xml" "eog/" "ibus/" "common-lisp/" "software-center/" "google-chrome/" "Skype/" "Empathy/" "gnome-control-center/" "dconf/" "autokey/" "gnome-disk-utility/" "ghb/" "gnome-session/" "nautilus/" "update-notifier/" "mnemosyne/" "libreoffice/" "autostart/" "./" "Fritzing/" "user-dirs.dirs" "ubuntuone/" "menus/" "user-dirs.locale" "libimobiledevice/" "transmission/" "vlc/" "Trolltech.conf" "xm1/" "chromium/" "enchant/" "compiz-1/" "gedit/" "../" "yelp/")
+
+ ("/home/dwinston/Dropbox/meteor_projects/task-snuggler/moment-generators/" (21059 31294 610109 475000) "lib/" "learnedMomentsFromNow.js" "./" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/task-snuggler/moment-generators/lib/" (21057 61621 400894 562000) "./" "initialize.js" "../")
+
+ ("/home/dwinston/Dropbox/docs/resume and cv/" (21057 45192 958090 733000) "resume.pdf" "software-engineering.doc" "resume.tex" "donny-winston-resume.pdf" "res9b.pdf" ".git/" "DonaldWinston-resume.docx" ".hg/" "res.cls" "resume.synctex.gz" "mit-official-transcript.pdf" ".gitignore" "res1.tex" "res1.pdf" "EIPBN 2011 jobs - Winston.docx" ".hgignore" "helvetica.sty" "zacka-resume.pdf" "res1.log" "res9b.tex" "EIPBN 2011 jobs - Winston.pdf" "./" "Gayle_McDowell_CareerCup_Sample_Resume.doc" "DonnyWinston-CV.docx" "EIPBN 2011 jobs - Winston - eipbn2011 papers.pdf" "EIPBN 2011 jobs - Winston - eipbn2011 papers.docx" "resume.log" "../" "res9b.log")
+
+ ("/home/dwinston/Dropbox/diary/13/" (21038 12030 88330 236000) "03/" "06/" "08/" "04/" "09/" "07/" "05/" "./" "02/" "01/" "../" "02-housing-search/")
+
+ ("/home/dwinston/Dropbox/meteor_projects/parties/public/" (21053 38897 363233 602000) "soma.png" "./" "../")
+
+ ("/home/dwinston/Desktop/" (21051 42219 103684 180000) "agenda.txt" "agenda.txt~" "scratch.rb" "./" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/todos/client/" (21053 54793 761232 139000) "todos.html" "todos.js" "todos.css" "./" "#todos.html#" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/parties/" (21053 38897 363233 602000) "client/" "server/" "public/" "./" ".meteor/" "model.js" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/todos/.meteor/" (21053 42158 653117 540000) "release" "packages" "local/" ".gitignore" "./" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/todos/public/" (21053 38880 855151 747000) "destroy.png" "./" "close_16.png" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/todos/server/" (21053 38880 855151 747000) "publish.js" "bootstrap.js" "./" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/todos/" (21053 38880 855151 747000) "client/" "server/" "public/" "./" ".meteor/" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/task-snuggler/private/" (21030 10393 103411 682000) "default-algorithm.json" "./" "usernames.json" "../")
+
+ ("/home/dwinston/Dropbox/diary/13/08/" (21024 54661 735800 449000) "ways-to-make-a-dollar-in-cash.js" "results.txt" "pushpickup-as-email-app.odg" "Sun Tzu on the Art of War_files/" "numSetsOfKCommitmentEvents.rb" "google/" "door-closed.png" "fullcalendar-1.6.2/" "google-travel.txt" "door-open.png" "door-is-closed.png" "./" "Sun Tzu on the Art of War.html" "tutorial-on-good-lisp-programming-style_norvig_pitman.ps" "something-wlk.js" "../" "MVI_1042.MOV")
+
+ ("/home/dwinston/dotfiles/" (21012 636 163069 843000) ".bash_profile" ".screenrc" ".bashrc_custom" ".git/" ".bashrc" "README.md" "./" "../" ".emacs.d/")
+
+ ("/home/dwinston/Dropbox/meteor_projects/task-snuggler/lib/" (21010 64472 27491 819000) "moment.min.js" "./" "../")
+
+ ("/home/dwinston/Dropbox/personal-projects/kspace-osmosis/" (21012 55142 647840 233000) "index.html" "test-video.webm" ".git/" ".gitignore" "main.css" "main.js" "ajax-loader.gif" "./" "background-35.jpg" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/pushpickup/" (21010 62295 232697 678000) "client/" "server/" "signInOut.js" "about.html" "lib/" "smart.json" "app.js" "app.html" "help.html" "marketingCopy.html" "packages/" "smart.lock" ".git/" "public/" "footer.html" "location.html" "bundle.tar.gz" ".gitignore" "hello.html" "map.html" "app.css" "ideas.org" "proposal.html" "./" ".meteor/" "addProposal.html" "../" "signInOut.html")
+
+ ("/home/dwinston/coursera-startup/bitstarter/" (21010 41482 245079 687000) "index.html" "web.js" ".git/" "Procfile" "node_modules/" "./" "grader.js" "package.json" "checks.json" "../")
+
+ ("/home/dwinston/coursera-startup/" (20997 47748 433553 329000) "lecture5-market-wireframing-design.pdf" "hw2/" "fibonacci.js" "lecture4a-linux-command-line.pdf" "hw6/" "emacs24-refcard.pdf" "lecture11-regulation-disruption-technologies-2013.pdf" "hw5/" "lecture7-deployment-dns-custom-domains.pdf" "hw1/" "lecture1-v2-introduction.pdf" "quiz/" "lecture9-social-local-mobile-growth-virality.pdf" "startup-lecture_slides-lecture8-mobile-v2.pdf" "lecture0-v3-logistics.pdf" "lectures/" "hw4/" "./" "bitstarter/" "lecture4b-developer-environment.pdf" "lecture2-interactive-start.pdf" "lecture3-linux-ssjs.pdf" "lecture6-html-css-js.pdf" "temp/" "../" "I Have Fun/" "hw3/")
+
+ ("/home/dwinston/Dropbox/personal-projects/" (21010 41179 723579 515000) "moving from MA to CA/" "kspace-osmosis/" "javascript_the_good_parts/" "#scheme.scm#" "coursera-pgm/" "coursera-startup/" "javascriptissexy/" "coursera-ml/" "oy/" "html5cookbook/" "meteoric.sh/" "sampledb/" "donnysharingthoughts/" "poster-print-candidates/" "problem-technique-fit/" "ocf_website_20080607/" "problem-technique-fit.txt" "rfid-pet-food-access/" "shortcourse - omit needless words/" "carter-and-I-know-it/" "foo.txt" "coursera-saas/" "coursera-progfun/" "project_euler/" "new-coder/" "udacity-startup/" "childhood-short-films/" "woodenfish/" "quiddler/" "someday-maybe.txt" "./" "tip-of-day/" "aptana-workspace/" "anEclipseWorkspace/" "todoqu/" "dailytodooski/" "head-first-html/" "json-photo-gallery/" "list-of-problems~" "tiddlywiki/" "coursera-finance/" "../" "oftwochooseone/" "foo.txt~" "jekyll/")
+
+ ("/home/dwinston/Dropbox/docs/" (20743 59611 789847 840000) "201109 berggren nsf center proposal/" "201111 avs 58 conference HIM session/" "201208-zeiss-app-note-nibl/" "work-at-nist/" "qnn-computers.xlsx" "MKS 245 Valve Adjustment Procedure first edit.doc" "Unicode symbol reference (long).doc" "resume and cv/" "SyncToy_06286b79-4aae-4062-8494-597755942350.dat" "ESPACER_Techinical_data.pdf" "winston-sheil09/" "thesis-proposal/" "201104 mtl abstract/" "src-proposal-fa10/" "graphene-milling-HIM/" "unicode.xml" "get-trimer-procedure/" "unicode-codes-commonly-used.txt" "201105 eipbn-snibl-talk/" "word 2010 keyboard shortcuts.pdf" "sublet-fa10/" "nibl visit 3 report/" "zeiss-contract.pdf" "model based linewidth metrology/" "lorenzo-manuscript/" "lithium-litho/" "APS styleguide incl journal title abbreviations.pdf" "scooter/" "dentist.txt" "201209-microscopy and microanalysis/" "scanning-manuscript/" "phd-thesis/" "blogpost_or_essay_notes/" "./" "Orion Training Material/" "academic-refs/" "201104 stem proposal/" "Espacer_20090511.pdf" "being-at-nist.odt" "2012 health insurance.zip" "phd-thesis-word/" "imprint-mold-via-hebeam/" "scanning-2011/" "qnn_order_form.xls" "endnote.bib" "nibl-manuscript/" "../" "20110402-mtg-with-karl/" "ti83plus-manual.pdf" "travel expense voucher.xls")
+
+ ("/home/dwinston/Dropbox/meteor_projects/pushpickup/server/" (20993 46768 775432 216000) "permissions.js" "profile.js" "email.js" "pickupultimate-imported.js" "load-initial-proposals.js" "pubs.js" "./" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/pushpickup/client/" (20993 46768 775432 216000) "addProposal.js" "lib/" "map.js" "proposal.js" "mainpage.js" "./" "location.js" "../")
+
+ ("/home/dwinston/Dropbox/diary/13/08/fullcalendar-1.6.2/demos/" (20994 34611 709598 811000) "basic-views.html" "theme.html" "selectable.html" "agenda-views.html" "gcal.html" "default.html" "json.html" "cupertino/" "json-events.php" "./" "external-dragging.html" "../")
+
+ ("/home/dwinston/Dropbox/diary/13/08/fullcalendar-1.6.2/" (20994 34611 717598 848000) "demos/" "jquery/" "fullcalendar/" "./" "changelog.txt" "license.txt" "../")
+
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/app/assets/stylesheets/" (20976 28126 803444 51000) "static_pages.css.scss" "password_resets.css.scss" "custom.css.scss" "application.css" "cities.css.scss" "fields.css.scss" "gmaps4rails.css" "email_confirmations.css.scss" "sessions.css.scss" "./" "players.css.scss" "../")
+
+ ("/home/dwinston/.meteoric.sh/" (20978 51787 690993 556000) "meteoric.sh" ".git/" "README.md" "./" "install" "../" "meteoric.config.sh")
+
+ ("/home/dwinston/Dropbox/personal-projects/meteoric.sh/" (20978 45517 865338 404000) "meteoric.sh" ".git/" "README.md" "./" "install" "../" "meteoric.config.sh")
+
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/config/environments/" (20845 8573 910125 356000) "test.rb" "production.rb" "development.rb~" "./" "development.rb" "../")
+
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/config/" (20840 46888 933601 536000) "database.example.yml" "locales/" "unicorn.rb" "unicorn_init.sh~" "database.yml" "application.rb" "boot.rb" "environment.rb" "pushpickup.com-private.key" "nginx.conf" "pushpickup.com.crt" "unicorn_init.sh" "initializers/" "routes.rb" "./" "pushpickup.com-chain.crt" "environments/" "pushpickup.com-intermediate.crt" "deploy.rb" "deploy.rb~" "../")
+
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/app/views/static_pages/" (20976 16202 705045 321000) "about.html.haml" "help.html.haml" "./" "home.html.haml" "#about.html.haml#" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/pushultimate/" (20976 23946 886716 964000) "client/" "server/" "smart.json" "packages/" "smart.lock" ".git/" "public/" "pushpickup.js" ".gitignore" "pushpickup.html" "./" "pushpickup.css" ".meteor/" "../")
+
+ ("/home/dwinston/Dropbox/diary/13/07/" (20976 13045 789391 15000) "12.org" "green-dot.png" "disk_usage_during_streamrecord.png" "04.txt~" "move-layer-to.scm" "hug.txt~" "07.org" "04.txt" "blue-dot.png" "pushpickup-asset2.xcf" "05.org" "06.org" "hug.txt" "windows8_icons.zip" "pink-dot.png" "09.org~" "06.org~" "08.org~" "08.org" "ajax-loader.gif" "Schedule-Streaming-Audio-Recordings-in-Ubuntu.pdf" "countdownBasic.html" "countdownGlowing.gif" "./" "03.org~" "jquery-countdown/" "09.org" "pushpickup-asset2.png" "cpu_usage_during_streamrecord.png" "countdownLED.png" "streamrecord" "yellow-dot.png" "purple-dot.png" "03.org" "../" "network_usage_during_streamrecord.png" "07.org~" "red-dot.png")
+
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/app/views/" (20830 11749 38351 525000) "fields/" "player_mailer/" "shared/" "password_resets/" "signup_confirmations/" "players/" "sessions/" "./" "static_pages/" "cities/" "availabilities/" "../" "layouts/")
+
+ ("/home/dwinston/coursera-startup/hw4/bitstarter/" (20976 2741 14292 397000) "index.html" "web.js" ".git/" "Procfile" "node_modules/" "./" "grader.js" "package.json" "checks.json" "../")
+
+ ("/home/dwinston/coursera-startup/hw4/" (20973 34527 901620 881000) "part1-instructions.pdf" "part1.url" "./" "bitstarter/" "../" "part2.url")
+
+ ("/home/dwinston/dotfiles/.emacs.d/" (20969 54245 855661 696000) "defuns-config.el" "column-marker.el" "jade-mode/" "linum.el" "init.el" "js-config.el" "url/" "node_emacs" "whitespace.el" "./" "js-comint.el" "backups/" "smooth-scrolling.el" "elpa/" "../" "auto-save-list/")
+
+ ("/home/dwinston/Dropbox/meteor_projects/pushpickup/lib/" (20968 20485 731367 19000) "time.js" "./" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/pushultimate/public/images/" (20958 9179 897663 584000) "marker-icon.png" "layers.png" "marker-icon@2x.png" "markerRed.png" "./" "marker-shadow.png" "markerYellow.png" "email_sign_in_blue.png" "../" "markerGreen.png")
+
+ ("/home/dwinston/Dropbox/meteor_projects/pushultimate/public/" (20919 46859 756174 6000) "images/" "./" "../")
+
+ ("/home/dwinston/Dropbox/meteor_projects/pushultimate/client/" (20923 24604 330854 992000) "jquery.cookie.js" "./" "../")
+
+ ("/scripts/" (20964 36553 319874 869000) "kzsu_emily_lines_streamrecord~" "kzsu_emily_lines_streamrecord" "./" "streamrecord~" "streamrecord" "../")
+
+ ("/home/dwinston/Dropbox/diary/13/07/jquery-countdown/" (20966 61291 478648 332000) "jquery.countdown.css" "index.html" "jquery.countdown.min.js" "index.html~" "jquery.countdown.js" "libpeerconnection.log" "countdownBasic.html" "countdownGlowing.gif" "./" "jquery.countdown.package-1.6.2.zip" "countdownLED.png" "../")
+
+ ("/home/dwinston/Dropbox/diary/" (20964 33668 193568 307000) "anti-todo-list.org~" "morning-dump.org~" "11/" "morning-dump.org" ".hg/" "13/" "journal-of-best-practices.txt~" "anti-todo-list.org" "journal-of-best-practices.txt" ".hgignore" "kspace/" "12/" "./" "food-I-want-to-make.txt" "jobs.txt" "sparks.txt" "18_minutes_daily_todo/" "10/" "plan.txt" "../" "workoutLog.xlsx")
+
+ ("/home/dwinston/Dropbox/meteor_projects/pushultimate/server/" (20940 56778 188761 2000) "pickupultimate-imported.js~" "pickupultimate-imported.js" "./" "../")
+
+ ("/home/dwinston/Dropbox/personal-projects/coursera-startup/hw3/" (20953 64239 103000 935000) "part1.csv" "part3.json" "./" "grader.js" "../" "part2.url")
+
+ ("/home/dwinston/Dropbox/personal-projects/coursera-startup/" (20953 53010 739322 460000) "hw2/" "fibonacci.js" "lecture4a-linux-command-line.pdf" "emacs24-refcard.pdf" "hw1/" "lecture1-v2-introduction.pdf" "lecture0-v3-logistics.pdf" "lectures/" "./" "lecture4b-developer-environment.pdf" "lecture2-interactive-start.pdf" "lecture3-linux-ssjs.pdf" "temp/" "../" "I Have Fun/" "hw3/")
+
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/app/assets/" (20762 50995 484726 495000) "images/" "stylesheets/" "javascripts/" "./" "../")
+
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/app/" (20763 5810 710429 745000) "views/" "models/" "./" "controllers/" "assets/" "mailers/" "../" "helpers/")
+
+ ("/home/dwinston/Dropbox/rails_projects/push_pickup/" (20848 34587 245370 829000) "app/" "Rakefile" "db/" "Capfile" "lib/" ".rspec" "doc/" "spec/" ".git/" ".ruby-gemset" "public/" "tmp/" ".idea" "Gemfile.lock" ".gitignore" "Gemfile" "README.md" "config.ru" "log/" "./" ".ruby-version" "script/" "vendor/" "../" "Guardfile" ".bundle/" "config/")
+
+ ("/home/dwinston/Dropbox/rails_projects/" (20859 14367 602019 648000) "play-scraping/" "push_pickup/" "lunch_roulette_deployer/" "greenlist/" "donny_staples/" "tennis_finder/" "golfballs/" "ultimate_finder/" "grokthestack.com/" "sample_app/" "lunch_roulette/" "HOWTO.txt" "greenlist_kspace/" "store/" "spokenvote/" "./" "play-mechanize/" "../" "136-jquery-ajax-revised/")
+
+ ("/home/" (20743 19419 3783 501000) "dwinston/" "./" "../")
+
+ ("/home/dwinston/.emacs.d~/" (20955 49260 140433 465000) "themes/" "init.el" "session.1059375992826d2752137236781043113800000012440040" "markdown-mode.el" "js2-mode.el" "init.el~" "session.10ad985f7cf7930694136959525782353100000012380044" "mwe-log-commands.el" "#mwe-log-commands.el#" "./" "elpa/" "../" "auto-save-list/" "session.104552fc203a58b9e6137122845981541400000301420041")
+
+ (".emacs.d/elpa/slime-20100404.1/" (20864 10446 603036 112000) "slime-autoloads.el" "slime-pkg.el" "slime-pkg.elc" "./" "slime.elc" "../" "slime.el")
+
+ ("/usr/share/info/emacs-24/" (20864 9454 410116 93000) "emacs-2.gz" "ada-mode.gz" "efaq.info.gz" "vip.gz" "sc.gz" "speedbar.gz" "mh-e.gz" "dbus.gz" "eudc.gz" "ccmode-2.gz" "eieio.gz" "autotype.gz" "ert.gz" "gnus.gz" "emacs-mime.gz" "pcl-cvs.gz" "emacs.gz" "org-3.gz" "elisp-7.gz" "emacs-8.gz" "ebrowse.gz" "calc.gz" "idlwave.gz" "mairix-el.gz" "org.gz" "emacs-6.gz" "calc-3.gz" "forms.gz" "eintr-2.gz" "message.gz" "cl.gz" "calc-1.gz" "pgg.gz" "eintr.gz" "eshell.gz" "ses.gz" "sasl.gz" "auth.gz" "gnus-3.gz" "elisp-5.gz" "org-1.gz" "gnus-1.gz" "calc-6.gz" "calc-4.gz" "emacs-3.gz" "ede.gz" "elisp-8.gz" "url.gz" "rcirc.gz" "nxml-mode.gz" "mh-e-1.gz" "emacs-1.gz" "elisp-11.gz" "gnus-2.gz" "elisp-3.gz" "edt.gz" "smtpmail.gz" "elisp-10.gz" "ediff.gz" "gnus-4.gz" "reftex.gz" "emacs-gnutls.gz" "eintr-1.gz" "mh-e-2.gz" "remember.gz" "viper.gz" "info.gz" "./" "sieve.gz" "emacs-5.gz" "widget.gz" "ccmode.gz" "dired-x.gz" "newsticker.gz" "epa.gz" "elisp-6.gz" "elisp.gz" "elisp-9.gz" "eintr-3.gz" "tramp.gz" "emacs-7.gz" "gnus-5.gz" "org-2.gz" "flymake.gz" "semantic.gz" "erc.gz" "calc-5.gz" "elisp-4.gz" "woman.gz" "calc-2.gz" "../" "ccmode-1.gz" "elisp-2.gz" "emacs-4.gz" "elisp-1.gz")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

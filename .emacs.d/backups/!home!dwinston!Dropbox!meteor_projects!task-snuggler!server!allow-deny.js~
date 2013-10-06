@@ -1,0 +1,5 @@
+Commitments.allow({
+  insert: function (userId, doc) {},
+  update: function (userId, doc, fieldNames, modifier) {},
+  remove: function (userId, doc) {}
+});

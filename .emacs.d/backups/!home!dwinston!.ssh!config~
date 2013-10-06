@@ -1,0 +1,4 @@
+Host awshost
+HostName ec2-54-215-121-155.us-west-1.compute.amazonaws.com
+User ubuntu
+IdentityFile "~/.ssh/dwinst-aws.pem"

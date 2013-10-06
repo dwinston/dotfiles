@@ -1,0 +1,46 @@
+Template.mainpage.helpers({
+  showHelp: function () {
+    return Session.get("showFooterLink") === "Help";
+  },
+  showAbout: function () {
+    return Session.get("showFooterLink") === "About";
+  },
+  locationIsSelected: function () {
+    return !!Session.get("mapSelectedLocation");
+  },
+  proposals: function () {
+    return Proposals.find({},
+      {sort: {time: 1, pushing: -1, following: -1}}
+    );
+  }
+});
+
+Template.help.helpers({
+  quorum: function () {
+    return QUORUM;
+  }
+});
+
+Template.mainpage.events({
+  "click #helpLink": function () {
+    Session.set(
+      "showFooterLink", 
+      (Session.get("showFooterLink") === "Help") ? false : "Help"
+    );
+    $(document.body).animate({
+      'scrollTop': $('.footerLink').offset().top
+    }, 400);
+  },
+  "click #aboutLink": function () {
+    Session.set(
+      "showFooterLink", 
+      (Session.get("showFooterLink") === "About") ? false : "About"
+    );
+    $(document.body).animate({
+      'scrollTop': $('.footerLink').offset().top
+    }, 400);
+  },
+  "click .signIn": function () {
+    Meteor.loginWithPersona();
+  }
+});

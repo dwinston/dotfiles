@@ -1,0 +1,10 @@
+<template name="footer">
+  <footer class="footer">
+    <small> You can do it! </small> 
+    <ul>
+      <li><a href="http://www.visualpharm.com/"
+             target="_blank">Icons</a></li>
+      <li><a id="aboutLink">About</a></li>
+    </ul>
+  </footer>
+</template>

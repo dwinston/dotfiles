@@ -1,0 +1,48 @@
+<template name="about">
+  <div id="aboutContent">
+    <h1>About Push Pickup</h1>
+    <p class="lead">
+      Push Pickup helps you push for a game of
+      pickup <a href="http://en.wikipedia.org/wiki/Ultimate_(sport)"
+                target="_blank">ultimate frisbee</a> at a time you want, at a
+      field near you.
+    </p>
+    <h2>Can't make a regular pickup game?</h2> 
+    <p class="long">
+      <a href="http://pickupultimate.com" target="_blank">
+        Pickupultimate.com </a> is great for finding established,
+      regularly scheduled pickup games.  But if you can't play in
+      an existing regular game, Push Pickup helps you connect with
+      people who live or work near a field and who want to play
+      pickup ultimate frisbee, even if everyone's individual
+      availabilities vary from week to week.
+    </p>
+    <h2>
+      Already part of a regular pickup game with an email list?
+    </h2>
+    <p class="long">
+      Push Pickup helps reduce unnecessary group messages such as
+      "Who's in today?", "Can we start a bit earlier?", "I'm in.",
+      "I'm in.", "I'm in but I'll be late today.", "We need more
+      people. Anyone?", and "Is the game on?".
+    </p> 
+    <h2>
+      Having trouble scheduling occasional games?
+    </h2>
+    <p class="long"> Push Pickup helps you and people near you pool
+      together your availabilities and commit to games. Tell your
+      friends, and meet new friends who happen to be available to play
+      when you are. :)
+    </p> 
+    <h2>Questions? Suggestions? Compliments?</h2> 
+    <p>
+      Let me know what you think at
+      <a href="mailto:donny@pushpickup.com">donny@pushpickup.com</a>.
+    </p>
+    <p>
+      Thanks,
+    </p>
+    <p>
+      Donny
+    </p>
+</template>

@@ -1,0 +1,49 @@
+<head>
+  <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChKXycbNNk9Hzuh41Fwv1YivFUwsBQYNk&sensor=true">
+  </script>
+</head>
+
+<template name="map">
+  {{#constant}}
+    <div class="map-wrapper">
+      <div id="map"></div>
+    </div>
+  {{/constant}}
+      <p><a id="detectLocation">
+        <i class="icon icon-screenshot"></i>
+        Detect Location
+      </a></p>
+      {{#if currentUser}}
+        <p><a id="setHome">
+          <i class="icon icon-home"></i>
+          Set As Home Viewport
+        </a></p>
+        {{#unless addingLocation}}
+          <p><a id="addLocation">
+            <i class="icon icon-map-marker"></i>
+            Add Field
+          </a></p>
+        {{/unless}}
+      {{/if}}
+  <p>
+    {{#if currentUser}}
+      {{#if addingLocation}}
+        {{#unless haveCoordinates}}
+          Click the map to set the new field's coordinates |
+          <a id="neverMind">Never mind</a>
+        {{else}}
+          <form class="form-inline" id="newLocForm">
+            <input type="text" id="newLocName"
+                   placeholder="Name"
+                   required />
+            <input type="submit" class="btn btn-primary" 
+                   id="createLocation" 
+                   value="Add it" /> | 
+            <a id="neverMind">Never mind</a>
+          </form>        
+        {{/unless}}
+      {{/if}}
+    {{/if}}
+  </p>
+</template>

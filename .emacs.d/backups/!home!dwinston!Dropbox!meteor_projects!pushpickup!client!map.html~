@@ -1,0 +1,16 @@
+<head>
+  <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChKXycbNNk9Hzuh41Fwv1YivFUwsBQYNk&sensor=true">
+  </script>
+</head>
+
+<template name="map">
+  <!-- I may want to wrap the below in a #constant-->
+  <div id="map"></div>
+
+  <ul id="locations">
+    {{#each locations}}
+    <li class="location">{{name}}</li>
+    {{/each}}
+  </ul>
+</template>
